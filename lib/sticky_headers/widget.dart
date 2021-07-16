@@ -122,7 +122,8 @@ class _StickyHeaderBuilderState extends State<StickyHeaderBuilder> {
       header: LayoutBuilder(
         builder: (context, _) => widget.builder(context, _stuckAmount ?? 0.0),
       ),
-      content: widget.content,
+      // content: widget.content,
+      content: Text("378219372193"),
       controller: widget.controller,
       callback: (double stuckAmount) {
         print("ditme ");
