@@ -125,6 +125,7 @@ class _StickyHeaderBuilderState extends State<StickyHeaderBuilder> {
       content: widget.content,
       controller: widget.controller,
       callback: (double stuckAmount) {
+        print("ditme ");
         setState(() {});
         if (_stuckAmount != stuckAmount) {
           _stuckAmount = stuckAmount;
