@@ -117,7 +117,7 @@ class _StickyHeaderBuilderState extends State<StickyHeaderBuilder> {
 
   @override
   Widget build(BuildContext context) {
-    return StickyHeader(
+    return Container(); StickyHeader(
       overlapHeaders: widget.overlapHeaders,
       header: LayoutBuilder(
         builder: (context, _) => widget.builder(context, _stuckAmount ?? 0.0),
