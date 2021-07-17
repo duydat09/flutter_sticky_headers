@@ -116,6 +116,12 @@ class _StickyHeaderBuilderState extends State<StickyHeaderBuilder> {
   double? _stuckAmount;
 
   @override
+  void initState() { 
+    super.initState();
+    print("asdjasldjsalda");
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(); StickyHeader(
       overlapHeaders: widget.overlapHeaders,
@@ -126,8 +132,6 @@ class _StickyHeaderBuilderState extends State<StickyHeaderBuilder> {
       content: Text("378219372193"),
       controller: widget.controller,
       callback: (double stuckAmount) {
-        print("ditme ");
-        setState(() {});
         if (_stuckAmount != stuckAmount) {
           _stuckAmount = stuckAmount;
           WidgetsBinding.instance.endOfFrame.then((_) {
